@@ -45,6 +45,9 @@ endif (WXP_COMPAT)
 
 set (MJPG_STREAMER_PLUGIN_INSTALL_PATH "lib/mjpg-streamer")
 
+add_definitions(-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64)
+set(FILE_OFFSET_BITS 64)
+
 #
 # Global dependencies
 #
